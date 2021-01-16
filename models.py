@@ -30,17 +30,23 @@ class User(Base, AddUpdateDelete):
     name = Column(String, nullable=False)
     age = Column(Integer, nullable=False)
     phone_number = Column(String, nullable=False)
-    answer = Column(Integer)
-    poll = Column(Integer)
+    answer1 = Column(Integer)
+    answer2 = Column(Integer)
+    answer3 = Column(Integer)
+    answer4 = Column(Integer)
+    answer5 = Column(Integer)
     opinion = Column(Text)
     participation = Column(Text)
 
-    def __init__(self, name, age, phone_number, answer, poll, opinion, participation):
+    def __init__(self, name, age, phone_number, answer1, answer2, answer3, answer4, answer5, opinion, participation):
         self.name = name
         self.age = age
         self.phone_number = phone_number
-        self.answer = answer
-        self.poll = poll
+        self.answer1 = answer1
+        self.answer2 = answer2
+        self.answer3 = answer3
+        self.answer4 = answer4
+        self.answer5 = answer5
         self.opinion = opinion
         self.participation = participation
     
